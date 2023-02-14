@@ -1,5 +1,5 @@
 import sys
-input = sys.stdin.readline
+input = sys.stdin.readline # 입력속도 개선을 위해 작성
 
 N, M = tuple(map(int,input().split()))
 numbers = list(map(int,input().split()))
@@ -12,3 +12,4 @@ for i in numbers:
 for i in range(M):
     x, y = map(int, input().split())
     print(sums[y] - sums[x - 1])
+
