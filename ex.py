@@ -1,14 +1,10 @@
-# if __name__ == '__main__':
-#     n = input('당신에게 전할 메세지가 있습니다!. 본인 확인 부탁드리겠습니다??')
-#     i = 1
-#     while range(i,5):
-#         n = input('한승민이 전할 메세지가 있습니다!. 이름이 무엇인가요??')
-#         i += 1
-#         if n == '송은서':
-#             print('사랑해')
-#             break
-#         else:
-#             print('본인이 아닙니다')
-#             continue
-
-
+def fibonacci(n):
+    if n ==0: return 0
+    elif n==1: return 1
+    else:
+        return fibonacci(n - 1) + fibonacci(n-2) 
+# n = 3
+# fibonacci(n - 1) = 2 
+print('피보나치 수 -> 0 1', end=' ')
+for i in range(2,10):
+    print(fibonacci(i), end=' ')
