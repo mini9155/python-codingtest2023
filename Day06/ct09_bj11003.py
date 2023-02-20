@@ -1,3 +1,4 @@
+# 백준 11003
 from collections import deque
 N, L = map(int, input().split()) # map이란 함수에 int로 받는다
 mydeque = deque()
