@@ -46,9 +46,9 @@
     - 자료구조
         - 덱
     - 코딩테스트 알고리즘
-        - 백준
-        - 프로그래머스
-
+        - 투 포인터
+        - 슬라이딩 윈도우
+        - 정렬
 ```python
 # 백준 11003
 from collections import deque
@@ -64,3 +64,14 @@ for i in range(N):
         mydeque.popleft() # 왼쪽 값을 제거
     print(mydeque[0][0], end=' ')  #0번쨰에 있는 0번쨰 값을 출력, 무조건 최소값(min과 동일)
 ```
+
+# 7일차
+1. 코딩테스트 학습
+    - 자료구조
+        - [x]그래프
+        - [x]prioriyQueue(우선순위 큐)
+        - [x] heapq(힙큐)
+    - 알고리즘
+        - [x] 탐색 DFS/BFS
+        - [] 그리디
+        - [] 정수돈

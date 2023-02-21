@@ -1,21 +1,10 @@
-# 최소공배수
-a,b = map(int,input().split())
-A = a
-B = b
+'''
+머쓱이네 피자가게는 피자를 일곱 조각으로 잘라 줍니다. 피자를 나눠먹을 사람의 수 n이 주어질 때, 
+모든 사람이 피자를 한 조각 이상 먹기 위해 필요한 피자의 수를 return 하는 solution 함수를 완성해보세요.
+'''
+# 만약 12명이다 
+def solution(n):
+    return (n//7)+ (0 < n % 7 < 7)
 
-if A == B:
-    pass
-else:
-    i = 0
-    while A != B:
-        i += 1
-        if A > B:
-            B = b * i
-            if B > A:
-                i = 1
-        elif A < B:
-            A = a * i
-            if A > B:
-                i = 1
-    if A == B:
-        print(A)
+
+print(solution(7))
